@@ -48,11 +48,12 @@ body {
 
 a {
   color: var(--color-primary);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary);
+  text-decoration: none
 }
 
 h1,
@@ -110,7 +111,7 @@ pre > code {
 }
 
 header, footer {
-  background-color: #21222c; /* Levemente mais escuro que a página */
+  background-color: #21222c;
   background-size: cover;
   color: var(--color-light);
 }
@@ -226,6 +227,31 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   line-height: var(--space-s);
 }
 
+
+ul.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.social-icons > li {
+  margin: 0 10px;
+  font-size: 2.0rem;
+}
+
+ul.social-icons > li > a {
+  color: #ececec;
+  text-decoration: none;
+}
+
+
+ul.social-icons > li > a:hover {
+  color: #ff79c6;
+  opacity: 80%;
+  text-decoration: none;
+}
 /* Blocks */
 /*****************************************************************************/
 .content {
@@ -258,12 +284,11 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 .banner a {
   color: var(--color-primary);
   text-decoration: none;
-  border-bottom: 2px solid var(--color-primary);
 }
 
 .banner a:hover {
   color: var(--color-secondary);
-  border-bottom: 2px solid var(--color-secondary);
+  text-decoration: none;
 }
 
 .callout {
@@ -322,7 +347,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .column-body > nav a:hover {
   color: var(--color-secondary);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .column-nav {
@@ -338,6 +363,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .column-nav a {
   color: var(--color-medium);
+  text-decoration: none;
 }
 
 .column-nav a:hover {
@@ -391,6 +417,8 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   gap: var(--gutter);
   line-height: 1;
   padding-left: 0;
+  justify-content: center;
+  list-style: none;
 }
 
 .spread {
@@ -459,7 +487,6 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 .text-muted a:hover {
   color: var(--color-primary);
 }
-
 
 /* Create thumbnail for youtube videos */
 /* ----------------------------------- */
