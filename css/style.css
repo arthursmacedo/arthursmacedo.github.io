@@ -223,6 +223,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 .center-content{
   justify-content: center;
   text-align: center;
+  line-height: var(--space-s);
 }
 
 /* Blocks */
@@ -289,7 +290,8 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .profile img {
   border-radius:50%;
-  max-width: 20%;
+  max-width: var(--space-5xl);
+  
   justify-content: center;
 }
 
